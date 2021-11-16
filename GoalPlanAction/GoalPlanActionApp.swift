@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct GoalPlanActionApp: App {
+    @StateObject var viewChanger = ViewChanger()
+    let persistenceController = PersistenceController.shared
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BossView(viewChanger: viewChanger).environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
+}
+
+class ViewChanger: ObservableObject {
+    @Published var num: Int = 0
 }
