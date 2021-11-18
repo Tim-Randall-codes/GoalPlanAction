@@ -40,6 +40,8 @@ struct BossView: View {
     }
 }
 
+
+
 struct TitleView: View {
     @StateObject var viewChanger: ViewChanger
     @Environment(\.colorScheme) var colorScheme: ColorScheme
