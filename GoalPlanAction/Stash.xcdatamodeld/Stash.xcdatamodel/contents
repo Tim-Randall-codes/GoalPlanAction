@@ -2,6 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20E232" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Action" representedClassName="Action" syncable="YES" codeGenerationType="class">
         <attribute name="action" optional="YES" attributeType="String"/>
+        <attribute name="completed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
@@ -20,7 +21,7 @@
         <attribute name="plan10" optional="YES" attributeType="String"/>
     </entity>
     <elements>
+        <element name="Action" positionX="-54" positionY="81" width="128" height="89"/>
         <element name="Goal" positionX="-63" positionY="-18" width="128" height="209"/>
-        <element name="Action" positionX="-54" positionY="81" width="128" height="74"/>
     </elements>
 </model>

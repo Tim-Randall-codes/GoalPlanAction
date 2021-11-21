@@ -21,9 +21,11 @@ struct GoalPlanActionApp: App {
 }
 
 class ViewChanger: ObservableObject {
-    @Published var num: Int = 2
+    @Published var num: Int = 0
 }
 
 class IntOO: ObservableObject {
     @Published var num: Int = 0
 }
+
+var globalInt:Int = 0
